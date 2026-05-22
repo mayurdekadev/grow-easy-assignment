@@ -54,7 +54,7 @@ const OrganizationSelector = () => {
                         },
                     }}
                     sx={{
-                        width: '100%',
+                        width: 200,
                         height: 52,
                         borderRadius: "14px",
                         background: "#FFFFFF",
