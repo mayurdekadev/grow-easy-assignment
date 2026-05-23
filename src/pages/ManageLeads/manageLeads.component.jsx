@@ -1,10 +1,13 @@
 import { useState } from 'react';
+import TableComponent from '../../components/Table.jsx/table.component';
+import dataSource from './dataSource';
 import { Phone, Users, Target } from 'lucide-react';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import styles from "./manageLeads.module.css"
 
 const ManageLeads = () => {
+    const data = dataSource?.data;
 
     return (
         <div className={styles.sectionContainer}>
@@ -76,6 +79,9 @@ const ManageLeads = () => {
                         </Paper>
                     </Grid>
                 </Grid>
+            </div>
+            <div>
+                <TableComponent tableData={data} />
             </div>
         </div>
     );
